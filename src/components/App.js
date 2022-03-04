@@ -10,7 +10,7 @@ class App extends Component {
         selectedVideo: null
     } 
 
-    //Solve the issue of showing Loading when the user if entering in the app
+    //Solve the issue of showing Loading when the user is entering in the app
     //Show the entire view after searching for 'buildings' term
     componentDidMount() { 
         this.onTermSubmit('buildings');
@@ -33,7 +33,6 @@ class App extends Component {
     };
 
     onVideoSelect = (video) => {
-        //console.log("From the App : ",video);
         this.setState({selectedVideo : video});
     }
 

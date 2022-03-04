@@ -13,11 +13,5 @@ const VideoList = ({videos, onVideoSelect}) => { //destructuring obj ES2015
     });
     return <div className="ui relaxed divided list">{renderedList}</div>
 };
-// const VideoList = (props) => {
-//     //console.log("Props:",props);
-//     return (
-//         <div>{props.videos.length} videos</div>
-//     )
-// };
 
 export default VideoList;

@@ -3,7 +3,7 @@ import './VideoItem.css';
 
 const VideoItem = ({video, onVideoSelect}) => { //deconstructing obj ES2015
 
-    //use an arrow fct for onClick event for passing the video as argument to onVideoSelect cb
+    //used an arrow fct for onClick event for passing the video as argument to onVideoSelect cb
     return (
         <div className="videoItem item" onClick={()=>onVideoSelect(video)}> 
             <img 
@@ -18,10 +18,5 @@ const VideoItem = ({video, onVideoSelect}) => { //deconstructing obj ES2015
         </div>
     )
 };
-// const VideoItem = (props) => {
-//     //console.log(props.video.snippet.title);
-//     return (
-//         <div>{props.video.snippet.title}</div>
-//     )
-// };
+
 export default VideoItem;
